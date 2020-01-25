@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath} \usepackage{amssymb} \usepackage{amsthm}
+% These three packages are from the American Mathematical Society and includes
+% all of the important symbols and operations 
+\usepackage{fullpage}
+% By default, an article has some vary large margins to fit the smaller page
+% format.  This allows us to use more standard margins.
+
+\usepackage{blindtext}
+
+\setlength{\parskip}{1em}
+% This gives us a full line break when we write a new paragraph
+
+\title{MATH 308 Conceptual Problems, Week 4 \vspace{1em}\\\normalsize{SUPPLEMENTARY CONCEPTUAL PROBLEMS, 8d \& 8e}}
+\author{Jai Broome}
+\date{28 January 2020}
+
+\begin{document}
+% Once we have all of our packages and setting announced, we need to begin our
+% document.  You will notice that at the end of the writing there is an end
+% document statements.  Many options use this begin and end syntax.
+
+\maketitle
+
+\section{Question prompt}
+
+In each of the following, $\bar{x}$ is the vector whose components are the coefficients
+in $f(t)$, and $\bar{y}$ is the vector whose components are the coefficients in $f'(t)$. Taking
+the derivative of $f(t)$ in the usual way, you can find formulas for the $y$'s in terms
+of the $x$'s. Then find a matrix $A$ such that $\bar{y}=A\bar{x}$.
+
+\section{Reasoning and motivation}
+
+A few things have to be true for us to approach these derivave problems using the linear algebra
+tools that we've learned so far:
+
+\begin{itemize}
+  \item We need to be able to differentiate the general form our function $f(t)$ 
+    % general in the sense that it has the x's
+  \item Our function has to be of the form $f(t)=x_1g_1(t)+x_2g_2(t)+\cdots +x_ng_n(t)$ and
+    our derivative has to be of the form $f(t)=y_1g_1(t)+y_2g_2(t)+\cdots +y_ng_n(t)$
+    % some of these X_is can be zero
+\end{itemize}
+
+\end{document}
