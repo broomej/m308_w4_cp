@@ -1,3 +1,7 @@
+# intmdt latex files
+*.aux
+*.log
+
 # History files
 .Rhistory
 .Rapp.history
