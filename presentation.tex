@@ -112,17 +112,34 @@ Question prompt: $f(t) = (x_1 + x_2t + x_3t^2)e^{-kt}$, and $f'(t)$ has the same
 form with coefficients $y_1$, $y_2$, $y_3$.
 
 \[
-  f'(t) = (kx_1 - x_2 + (kx_2-2x_3)t + kx_3t^2)e^{-kt}
+  f'(t) = (-kx_1 + x_2 + (-kx_2+2x_3)t - kx_3t^2)e^{-kt}
 \]
 \[
   % systeme is grouping on the ks, need to sort this out
-  \systeme{kx_{1} - x_2 = y_1, kx_{2}-2x_3 = y_2, kx_{3} = y_3}
+  \systeme{-kx_1 + x_2 = y_1, -kx_2+2x_3 = y_2, -kx_{3} = y_3}
 \]
 \[
   \begin{vmatrix}
-    k & -1 & 0 \\
-    0 & k & -2 \\
-    0 & 0 & k
+    -k & 1 & 0 \\
+    0 & -k & 2 \\
+    0 & 0 & -k
   \end{vmatrix}
+\]
+\[
+  \frac{d}{dt}((5+10t+15t^2)e^{-kt}) = 
+\]
+\[
+  (10-5k + (30-10k)t -15kt^2)e^{-2t}
+\]
+\medbreak{}
+\[
+  \bar{y} = A\bar{x} = 
+  \begin{vmatrix}
+    -k & 1 & 0 \\
+    0 & -k & 2 \\
+    0 & 0 & -k
+  \end{vmatrix}
+  \begin{vmatrix} 5 \\ 10 \\ 15 \end{vmatrix} = 
+  \begin{vmatrix} 10-5k \\ 30-10k \\ -15k \end{vmatrix}
 \]
 \end{document}
