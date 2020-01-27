@@ -6,6 +6,8 @@
 % By default, an article has some vary large margins to fit the smaller page
 % format.  This allows us to use more standard margins.
 
+\usepackage{systeme}
+
 \usepackage{blindtext}
 
 \setlength{\parskip}{1em}
@@ -53,5 +55,20 @@ takes our n-dimensional vector $\bar{x}$ and produces an n-dimensional vector $\
 % this is our matrix A, right?
 
 \section{8d}
+Question prompt: $f(t) = x_1\sin(t) + x_2\cos(t) + x_3t\sin(t) + x_4t\cos(t)$,
+and $f'(t)$ has the same form with coefficients $y_1$, $y_2$, $y_3$, $y_4$.
+
+Find the derivative the usual way, treating the $x_i$s as constants, and making use of the product
+rule: \\
+
+% Add intermediate steps:
+\begin{equation}
+f'(t) = (-x_2 + x_3)\sin(t) + (x_1 + x_4)\cos(t) + (-x_4)t\sin(t) + (x_3)t\cos(t)
+\end{equation}
+
+Define the $y_i$s in $f'(t)$ so that they correspond to same positions as the $x_i$s in $f(t)$:
+% that is, y_1 is in front sin(t) etc
+
+\systeme{-x_2 + x_3 = y_1, x_1 + x_4 = y_2, -x_4 = y_3,x_3 = y_4}
 
 \end{document}
