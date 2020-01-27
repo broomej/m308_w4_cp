@@ -10,6 +10,9 @@
 
 \usepackage{blindtext}
 
+\usepackage{graphicx}
+\graphicspath{{./fig/}}
+
 \setlength{\parskip}{1em}
 % This gives us a full line break when we write a new paragraph
 
@@ -62,10 +65,15 @@ Find the derivative the usual way, treating the $x_i$s as constants, and making 
 rule: \\
 
 % Add intermediate steps:
-\begin{equation}
+\[
 f'(t) = (-x_2 + x_3)\sin(t) + (x_1 + x_4)\cos(t) + (-x_4)t\sin(t) + (x_3)t\cos(t)
-\end{equation}
+\]
 
+Let's pick a vector $\bar{x}=(2,4,6,8)$ to visualize $f(t)$ and $f'(t)$, and to later check our
+work. Inserting our values for the $x_i$s
+
+\includegraphics[width=8cm]{plot_8d_f} \includegraphics[width=8cm]{plot_8d_derivative} \\
+\includegraphics[width=17cm]{plot_8d_both}
 Define the $y_i$s in $f'(t)$ so that they correspond to same positions as the $x_i$s in $f(t)$:
 % that is, y_1 is in front sin(t) etc
 
@@ -129,7 +137,7 @@ form with coefficients $y_1$, $y_2$, $y_3$.
   \frac{d}{dt}((5+10t+15t^2)e^{-kt}) = 
 \]
 \[
-  (10-5k + (30-10k)t -15kt^2)e^{-2t}
+  (10-5k + (30-10k)t -15kt^2)e^{-kt}
 \]
 \medbreak{}
 \[
