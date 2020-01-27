@@ -84,12 +84,12 @@ Define the $y_i$s in $f'(t)$ so that they correspond to same positions as the $x
 In matrix form, this is our solution $A$:
 
 \[
-\begin{vmatrix}
+\begin{bmatrix}
   0 & -1 & 1 & 0 \\
   1 & 0 & 0 & 1 \\
   0 & 0 & 0 & -1 \\
   0 & 0 & 1 & 0 
-\end{vmatrix}
+\end{bmatrix}
 \]
 
 We can check our work by seeing if we get the same solution by plugging
@@ -104,14 +104,14 @@ $\bar{x}$ into $f(t)$ and differentiating; and computing $A\bar{x}$.
 \bigbreak{}
 \[
   \bar{y} = A\bar{x} = 
-  \begin{vmatrix}
+  \begin{bmatrix}
     0 & -1 & 1 & 0 \\
     1 & 0 & 0 & 1 \\
     0 & 0 & 0 & -1 \\
     0 & 0 & 1 & 0 
-    \end{vmatrix}
-  \begin{vmatrix} 2 \\ 4 \\ 6 \\ 8\end{vmatrix} = 
-  \begin{vmatrix} 2 \\ 10 \\ -8 \\ 6 \end{vmatrix}
+    \end{bmatrix}
+  \begin{bmatrix} 2 \\ 4 \\ 6 \\ 8\end{bmatrix} = 
+  \begin{bmatrix} 2 \\ 10 \\ -8 \\ 6 \end{bmatrix}
 \]
 
 \section{8e}
@@ -127,11 +127,11 @@ form with coefficients $y_1$, $y_2$, $y_3$.
   \systeme{-kx_1 + x_2 = y_1, -kx_2+2x_3 = y_2, -kx_{3} = y_3}
 \]
 \[
-  \begin{vmatrix}
+  \begin{bmatrix}
     -k & 1 & 0 \\
     0 & -k & 2 \\
     0 & 0 & -k
-  \end{vmatrix}
+  \end{bmatrix}
 \]
 \[
   \frac{d}{dt}((5+10t+15t^2)e^{-kt}) = 
@@ -142,12 +142,12 @@ form with coefficients $y_1$, $y_2$, $y_3$.
 \medbreak{}
 \[
   \bar{y} = A\bar{x} = 
-  \begin{vmatrix}
+  \begin{bmatrix}
     -k & 1 & 0 \\
     0 & -k & 2 \\
     0 & 0 & -k
-  \end{vmatrix}
-  \begin{vmatrix} 5 \\ 10 \\ 15 \end{vmatrix} = 
-  \begin{vmatrix} 10-5k \\ 30-10k \\ -15k \end{vmatrix}
+  \end{bmatrix}
+  \begin{bmatrix} 5 \\ 10 \\ 15 \end{bmatrix} = 
+  \begin{bmatrix} 10-5k \\ 30-10k \\ -15k \end{bmatrix}
 \]
 \end{document}
