@@ -114,4 +114,15 @@ form with coefficients $y_1$, $y_2$, $y_3$.
 \[
   f'(t) = (kx_1 - x_2 + (kx_2-2x_3)t + kx_3t^2)e^{-kt}
 \]
+\[
+  % systeme is grouping on the ks, need to sort this out
+  \systeme{kx_{1} - x_2 = y_1, kx_{2}-2x_3 = y_2, kx_{3} = y_3}
+\]
+\[
+  \begin{vmatrix}
+    k & -1 & 0 \\
+    0 & k & -2 \\
+    0 & 0 & k
+  \end{vmatrix}
+\]
 \end{document}
