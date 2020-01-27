@@ -1,3 +1,6 @@
+# macOS files
+._*
+
 # intmdt latex files
 *.aux
 *.log
