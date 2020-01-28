@@ -137,13 +137,24 @@ Briefly, this lets us quickly calculate $f''(t)$. Let $\bar{z}$ be the coefficie
 \textit{Question prompt}: $f(t) = (x_1 + x_2t + x_3t^2)e^{-kt}$, and $f'(t)$ has the same
 form with coefficients $y_1$, $y_2$, $y_3$.
 
+As before, our first step is to differentiate the general form of $f(t)$.
+
 \[
   f'(t) = (-kx_1 + x_2 + (-kx_2+2x_3)t - kx_3t^2)e^{-kt}
 \]
+
+We have $k$ terms in here, but that's okay. $k$ is a parameter in our equation, not an unkown and
+is \textit{not} in $\bar{x}$. It appears in our solution, but that's alright. We can do matrix
+multiplication that includes constant terms.
+
+Next, define the $y_i$s so that they correspond to the constant, $t$ and $t^2$ terms
+
 \[
-  % systeme is grouping on the ks, need to sort this out
-  \systeme{-kx_1 + x_2 = y_1, -kx_2+2x_3 = y_2, -kx_{3} = y_3}
+  \systeme{-kx_1 + x_2 = y_1, -kx_2+2x_3 = y_2, -kx_3 = y_3}
 \]
+
+In matrix form, this is our solution $A$:
+
 \[
   \begin{bmatrix}
     -k & 1 & 0 \\
@@ -151,6 +162,11 @@ form with coefficients $y_1$, $y_2$, $y_3$.
     0 & 0 & -k
   \end{bmatrix}
 \]
+
+\newpage
+
+Using $\bar{x} = (5, 10, 15)$, we can compare our solution differentiating $f(t)$ and computing $A\bar{x}$.
+
 \[
   \frac{d}{dt}((5+10t+15t^2)e^{-kt}) = 
 \]
