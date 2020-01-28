@@ -1,18 +1,12 @@
 \documentclass[12pt]{article}
-\usepackage{amsmath} \usepackage{amssymb} \usepackage{amsthm}
-% These three packages are from the American Mathematical Society and includes
-% all of the important symbols and operations 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
 \usepackage{fullpage}
-% By default, an article has some vary large margins to fit the smaller page
-% format.  This allows us to use more standard margins.
-
 \usepackage{systeme}
-
 \usepackage{blindtext}
-
 \usepackage{graphicx}
 \graphicspath{{./fig/}}
-
 \setlength{\parskip}{1em}
 % This gives us a full line break when we write a new paragraph
 
@@ -21,9 +15,6 @@
 \date{28 January 2020}
 
 \begin{document}
-% Once we have all of our packages and setting announced, we need to begin our
-% document.  You will notice that at the end of the writing there is an end
-% document statements.  Many options use this begin and end syntax.
 
 \maketitle
 
@@ -52,7 +43,6 @@ The reason we can approach this problem this way is because
 This second point means that the plot of $f'(t)$ will have some visual
 similarity to the plot of $f(t)$, since they're both composed of a series of
 the same functions functions multiplied by constants. \\
-% we'll see this when we look at the plots
 
 The tricky thing about this type of problem is that $f(t)$ and it's derivatives are 1-dimensional
 mappings $\mathbb{R} \rightarrow \mathbb{R}$; \textit{however}, our goal here is to find a mapping
@@ -62,6 +52,7 @@ $\mathbb{R}^4 \rightarrow \mathbb{R}^4$ that takes our 4-dimensional $\bar{x}$ a
 
 Find the derivative the usual way, treating the $x_i$s as constants, and making use of the product
 rule:
+
 \[
 f'(t) = (-x_2 + x_3)\sin(t) + (x_1 + x_4)\cos(t) + (-x_4)t\sin(t) + (x_3)t\cos(t)
 \]
@@ -92,7 +83,6 @@ In matrix form, this is our solution $A$:
 
 We can check our work by seeing if we get the same solution by plugging
 $\bar{x}$ into $f(t)$ and differentiating; and computing $A\bar{x}$. 
-% make sure you remember the rules for matrix multiplication.
 \[
   \frac{d}{dt}(2\sin(t)+4\cos(t)+6t\sin(t)+8t\cos(t)) = 
 \]
@@ -184,4 +174,18 @@ Using $\bar{x} = (5, 10, 15)$, we can compare our solution differentiating $f(t)
   \begin{bmatrix} 5 \\ 10 \\ 15 \end{bmatrix} = 
   \begin{bmatrix} 10-5k \\ 30-10k \\ -15k \end{bmatrix}
 \]
+\bigbreak{}
+\bigbreak{}
+\bigbreak{}
+\bigbreak{}
+\bigbreak{}
+\bigbreak{}
+\bigbreak{}
+\bigbreak{}
+\bigbreak{}
+\bigbreak{}
+\bigbreak{}
+\bigbreak{}
+
+\textit{presentation materials avalable at} github.com/broomej/m308\_w4\_cp
 \end{document}
